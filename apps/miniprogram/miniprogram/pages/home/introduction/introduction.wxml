@@ -1,0 +1,35 @@
+<import src="../../phone/phone-template.wxml"></import>
+<view class="container">
+    <view class="swiper-container">
+        <swiper autoplay="true" catchtap="onSwiperTap" circular="true" indicatorDots="true" interval="5000">
+            <swiper-item wx:for="{{imageUrls}}" wx:key="item">
+                <image src="{{item}}"></image>
+            </swiper-item>
+        </swiper>
+    </view>
+    <view class="contents-container">
+        <view class="content-container" wx:for="{{datasource}}" wx:key="item">
+            <view class="items-container">
+                <view class="title-container" wx:if="{{item.detailTitle!=null}}">
+                    <text class="title">{{item.title}}</text>
+                    <text class="detailTitle" wx:if="{{item.detailTitle!=null}}">{{item.detailTitle}}</text>
+                </view>
+                <view class="title-container" wx:else>
+                    <text class="title">{{item.title}}</text>
+                </view>
+                <block wx:for="{{item.content}}" wx:key="item">
+                    <view class="item-container" style="display: flex;flex-direction:row;" wx:if="{{item.url==null}}">
+                        <view class="contentL" style="width:40px;" wx:if="{{item.contentR!=null}}">{{item.contentL}}</view>
+                        <view class="contentL" style="width:{{width}}px" wx:else>{{item.contentL}}</view>
+                        <view class="contentR" style="width:{{width-40}}px" wx:if="{{item.contentR!=null}}">{{item.contentR}}</view>
+                        <view class="contentR" style="width:0px;" wx:else>{{item.contentR}}</view>
+                    </view>
+                    <view class="item-container" style="display:flex;flex-direction:column;" wx:else>
+                        <image mode="widthFix" src="{{item.url}}" style="width:100%;"></image>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </view>
+</view>
+<template is="phoneTemplate" data></template>

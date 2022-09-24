@@ -1,0 +1,114 @@
+@import "../phone/phone-template.wxss";
+
+.userinfo-content-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 320rpx;
+}
+
+.userinfo-background {
+    height: 360rpx;
+    width: 100%;
+}
+
+.userinfo-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 320rpx;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userinfo-avatar {
+    display: block;
+    width: 160rpx;
+    height: 160rpx;
+    margin: 20rpx;
+    margin-top: 50rpx;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    background: #fff;
+    overflow: hidden;
+}
+
+.userinfo-nick {
+    font-size: 16px;
+    color: black;
+}
+
+.section-menu {
+    background: #fff;
+    height: auto;
+    overflow: hidden;
+    margin-top: 20rpx;
+    width: 100%;
+}
+
+.section-menu .item {
+    height: 108rpx;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10 20rpx;
+}
+
+.section-menu .item:last-child {
+    border-bottom: 1px solid #fff;
+}
+
+.cs_button {
+    height: 108rpx;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10 20rpx;
+    width: 100%;
+    background: #fff;
+}
+
+.cs_button:after {
+    border: 0px;
+}
+
+.cs_image {
+    width: 44rpx;
+    height: 44rpx;
+}
+
+.cs_button text {
+    font-size: 14px;
+}
+
+.section-menu .item .icon {
+    width: 44rpx;
+    height: 44rpx;
+}
+
+.section-menu .item .label14 {
+    flex: 1;
+    font-size: 14px;
+}
+
+navigator {
+    width: 100%;
+}
+
+.bottom-btn {
+    margin-top: 30px;
+    height: 30px;
+    background: #e74c3c;
+    color: white;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 10px;
+}

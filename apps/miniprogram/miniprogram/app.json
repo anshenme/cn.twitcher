@@ -1,0 +1,43 @@
+{
+    "pages": [
+        "pages/cases/cases",
+        "pages/home/home",
+        "pages/mine/mine",
+        "pages/home/researchStudyPolicy/researchStudyPolicy",
+        "pages/home/introduction/introduction",
+        "pages/commonPages/webViewPage/webViewPage",
+        "pages/course/course-list/course-list"
+    ],
+    "window": {
+        "backgroundColor": "#0b8d73",
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "000000",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#888888",
+        "selectedColor": "#FFFFFF",
+        "borderStyle": "white",
+        "backgroundColor": "#0b8d73",
+        "list": [
+            {
+                "pagePath": "pages/cases/cases",
+                "text": "首页",
+                "iconPath": "images/tabBar/icon_SY.png",
+                "selectedIconPath": "images/tabBar/icon_SY_HL.png"
+            },
+            {
+                "pagePath": "pages/home/home",
+                "text": "观鸟会",
+                "iconPath": "images/tabBar/table-anli-no.png",
+                "selectedIconPath": "images/tabBar/table-anli-un.png"
+            },
+            {
+                "pagePath": "pages/mine/mine",
+                "text": "我的",
+                "iconPath": "images/tabBar/table-mine-no.png",
+                "selectedIconPath": "images/tabBar/table-mine-un.png"
+            }
+        ]
+    }
+}

@@ -1,0 +1,104 @@
+page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 320rpx;
+    position: relative;
+}
+
+swiper,swiper image {
+    width: 100%;
+    height: 100%;
+}
+
+.item {
+    height: 80rpx;
+    width: 100%;
+    align-items: center;
+    background-color: #fff;
+    position: relative;
+}
+
+.item .icon {
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 20rpx;
+    display: inline;
+    float: right;
+    margin-top: 20rpx;
+}
+
+.item .label {
+    flex: 1;
+    font-size: 14px;
+    display: inline;
+    float: left;
+    margin-left: 20rpx;
+    margin-top: 20rpx;
+}
+
+.navbar {
+    flex: none;
+    display: flex;
+    background: #fff;
+    margin-top: 20rpx;
+}
+
+.navbar .item {
+    position: relative;
+    flex: auto;
+    text-align: center;
+    line-height: 80rpx;
+    color: #B5B5B5;
+}
+
+.navbar .item.active {
+    color: #4292DE;
+}
+
+.navbar .item.active:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4rpx;
+    background: #4292DE;
+}
+
+.items-container {
+    margin: 15px;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 49px;
+    background: #fff;
+    border-top: 1px solid lightgray;
+}
+
+.apply {
+    width: 95px;
+    background-color: #f04848;
+    font-size: 14px;
+    color: #fff;
+    padding: 5px 0;
+    float: right;
+    text-align: center;
+    margin: 10px 16px 10px 0;
+    border-radius: 4px;
+}

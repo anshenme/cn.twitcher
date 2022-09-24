@@ -1,0 +1,8 @@
+<import src="../../phone/phone-template.wxml"></import>
+<view class="container" style="height:{{height}}px">
+    <view catchtap="enterDetail" class="content-container" data-url="{{item.url}}" wx:for="{{datas}}" wx:key="item">
+        <view class="point-container">・</view>
+        <text>{{item.content}}</text>
+    </view>
+</view>
+<template is="phoneTemplate" data></template>

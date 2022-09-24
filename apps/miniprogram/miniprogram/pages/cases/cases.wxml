@@ -1,0 +1,38 @@
+<import src="../phone/phone-template.wxml"></import>
+<view class="container">
+    <view class="swiper-container">
+        <swiper autoplay="true" catchtap="onSwiperTap" circular="true" indicatorDots="true" interval="5000">
+            <swiper-item wx:for="{{imageUrls}}" wx:key="item">
+                <image src="{{item}}"></image>
+            </swiper-item>
+        </swiper>
+    </view>
+    <view>
+        <text class="title">视频分享</text>
+        <video controls enableDanmu id="myVideo" src="cloud://test-aa5d52.7465-test-aa5d52/video/thefile 2.mov" style="width: 100%; height: 225px;"></video>树鹨、小鸊（pi）鷉（ti）、骨顶鸡
+    <video controls enableDanmu id="myVideo" src="cloud://test-aa5d52.7465-test-aa5d52/video/thefile 3.mov" style="width: 100%; height: 225px;"></video>鸿雁、黑天鹅、黑水鸡
+</view>
+    <view class="content-container">
+        <view class="items-container" wx:for="{{datas}}" wx:key="item">
+            <view class="title-container">
+                <text class="title">{{item.title}}</text>
+                <text class="more"></text>
+            </view>
+            <view class="item-container">
+                <view catchtap="enterAlbum" class="item" data-albumUrl="{{item.albumUrl}}" wx:for="{{item.content}}" wx:key="item">
+                    <view style="margin-left:10px" wx:if="{{index%2==0}}">
+                        <image src="{{item.imageUrl}}"></image>
+                        <text class="mainTitle">{{item.kechengName}}</text>
+                        <text class="detailTitle">{{item.kechengDetail}}</text>
+                    </view>
+                    <view style="margin-left:10px" wx:else>
+                        <image src="{{item.imageUrl}}"></image>
+                        <text class="mainTitle">{{item.kechengName}}</text>
+                        <text class="detailTitle">{{item.kechengDetail}}</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<template is="phoneTemplate" data></template>
