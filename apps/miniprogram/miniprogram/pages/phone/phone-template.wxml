@@ -1,3 +1,0 @@
-<template name="phoneTemplate">
-    <view bindtap="clickPhone" class="phone-view"></view>
-</template>
