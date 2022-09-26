@@ -1,5 +1,3 @@
-@import "../phone/phone-template.wxss";
-
 .swiper-container {
     width: 100%;
     height: 450rpx;

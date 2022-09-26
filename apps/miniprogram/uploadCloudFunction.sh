@@ -1,0 +1,1 @@
+"/Applications/wechatwebdevtools.app/Contents/MacOS/cli" cloud functions deploy --e test-aa5d52 --n quickstartFunctions --r --project "/Users/a123/WeChatProjects/twitcherwx" --report_first --report

@@ -1,12 +1,19 @@
 {
   "pages": [
+    "pages/index/index",
+    "pages/form/index",
+    "pages/list/index",
+    "pages/group/index",
+    "pages/webview/index",
+    "pages/tip/index",
     "pages/cases/cases"
   ],
   "window": {
     "backgroundColor": "#0b8d73",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#0b8d73",
-    "navigationBarTextStyle": "white"
+    "navigationBarTitleText": "观鸟迷Twitcher.cn",
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#888888",
@@ -15,24 +22,26 @@
     "backgroundColor": "#0b8d73",
     "list": [
       {
-        "pagePath": "pages/home/home",
+        "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "images/tabBar/table-anli-no.png",
         "selectedIconPath": "images/tabBar/table-anli-un.png"
       },
       {
-        "pagePath": "pages/cases/cases",
+        "pagePath": "pages/list/index",
         "text": "观察记录",
         "iconPath": "images/tabBar/icon_SY.png",
         "selectedIconPath": "images/tabBar/icon_SY_HL.png"
       },
       {
-        "pagePath": "pages/mine/mine",
+        "pagePath": "pages/form/index",
         "text": "用户中心",
         "iconPath": "images/tabBar/table-mine-no.png",
         "selectedIconPath": "images/tabBar/table-mine-un.png"
       }
     ]
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "style": "v2"
 }
