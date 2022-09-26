@@ -1,6 +1,12 @@
 <view>
     <view class="cover">
-        <image src="/images/logo.png" class="logo" />
+        <swiper indicator-dots="true" autoplay="true">
+            <block wx:for="{{banner}}" wx:key="item">
+                <swiper-item>
+                    <image lazy-load src="{{item.url}}" class="banner_image" />
+                </swiper-item>
+            </block>
+        </swiper>
     </view>
     <view class="title">嗨~欢迎来到元岛!</view>
     <view class="desc">这里是元岛的分组小程序V1 版本</view>
@@ -50,8 +56,8 @@
     <view class="text">而且，当元岛未来成员变多以后，我们也会尝试多个方向，比如共创产品、对接优质企业内推组织成员、分小组承接商业项目、线下聚会等等。</view>
     <view class="text">快来加入我们吧！</view>
     <navigator url="/pages/webview/index">
-        <view class="text">更多介绍可以点击这里前往元岛官网查看：</view>
-        <view class="text link">https://www.midorg.com</view>
+        <view class="text">更多介绍可以点击这里前往迷宇官网查看：</view>
+        <view class="text link">https://www.twitcher.cn</view>
     </navigator>
     <view class="cover"></view>
 </view>
