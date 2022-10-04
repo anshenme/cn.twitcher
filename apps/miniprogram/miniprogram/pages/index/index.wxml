@@ -1,6 +1,6 @@
 <view>
     <view class="cover">
-        <swiper indicator-dots="true" autoplay="true">
+        <swiper indicator-dots="true" autoplay="true" class="banner-image">
             <block wx:for="{{banner}}" wx:key="item">
                 <swiper-item>
                     <image lazy-load src="{{item.url}}" class="banner_image" />

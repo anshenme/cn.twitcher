@@ -5,8 +5,7 @@
     "pages/list/index",
     "pages/group/index",
     "pages/webview/index",
-    "pages/tip/index",
-    "pages/cases/cases"
+    "pages/tip/index"
   ],
   "window": {
     "backgroundColor": "#0b8d73",
