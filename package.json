@@ -1,0 +1,27 @@
+{
+  "name": "extraterrestrial-earth",
+  "version": "23.9.9",
+  "license": "CCA-3.0",
+  "author": {
+    "name": "AREA44",
+    "url": "https://github.com/AREA44/astro-multiverse"
+  },
+  "scripts": {
+    "build": "astro check && astro build",
+    "dev": "astro dev",
+    "format": "prettier -w . --cache",
+    "preview": "astro preview",
+    "start": "astro dev"
+  },
+  "dependencies": {
+    "astro": "^4.11.5",
+    "glob": "^11.0.0",
+    "@astrojs/check": "^0.8.0",
+    "typescript": "^5.5.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.2",
+    "prettier-plugin-astro": "^0.14.0"
+  },
+  "packageManager": "pnpm@9.5.0"
+}
