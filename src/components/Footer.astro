@@ -7,72 +7,33 @@ const { title, description } = Astro.props
     <div>
       <section>
         <h2>{title}</h2>
-        <p>{description}</p>
+        <p class="copyright">
+        看（kàn）好鸟 · 看（kān）好鸟
+      </p>
+      <p>欢迎投稿：twitcher@aliyun.com</p>
       </section>
       <section>
-        <h2>Follow me on ...</h2>
         <ul class="icons">
           <li>
-            <a href="#" class="icon brands fa-twitter" aria-label="Social">
-              <span class="label">Twitter</span>
+            <a href="#" class="icon brands fa-weixin" aria-label="Social">
+              <span class="label">Weixin</span>
             </a>
           </li>
           <li>
-            <a href="#" class="icon brands fa-facebook-f" aria-label="Social">
-              <span class="label">Facebook</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="icon brands fa-instagram" aria-label="Social">
-              <span class="label">Instagram</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="icon brands fa-github" aria-label="Social">
-              <span class="label">GitHub</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="icon brands fa-dribbble" aria-label="Social">
-              <span class="label">Dribbble</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="icon brands fa-linkedin-in" aria-label="Social">
-              <span class="label">LinkedIn</span>
+            <a href="#" class="icon brands fa-weibo" aria-label="Social">
+              <span class="label">Weibo</span>
             </a>
           </li>
         </ul>
       </section>
       <p class="copyright">
-        &copy; AREA44. Design: <a href="http://html5up.net">HTML5 UP</a>.<br />
-        Images: <a href="http://unsplash.com">Unsplash</a>
+        &copy; Twitcher.cn
       </p>
     </div>
     <div>
       <section>
-        <h2>Get in touch</h2>
-        <form method="post" action="#">
-          <div class="fields">
-            <div class="field half">
-              <input type="text" name="name" id="name" placeholder="Name" />
-            </div>
-            <div class="field half">
-              <input type="text" name="email" id="email" placeholder="Email" />
-            </div>
-            <div class="field">
-              <textarea
-                name="message"
-                id="message"
-                rows="4"
-                placeholder="Message"></textarea>
-            </div>
-          </div>
-          <ul class="actions">
-            <li><input type="submit" value="Send" class="primary" /></li>
-            <li><input type="reset" value="Reset" /></li>
-          </ul>
-        </form>
+        <h2>关注我们</h2>
+        <img src='images/qr code.jpg' alt="QR code" width="411" height="150">
       </section>
     </div>
   </div>

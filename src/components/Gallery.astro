@@ -11,7 +11,9 @@ async function ImageFetcher(pattern: string) {
 
   const imageFiles = await Promise.all(imagePromises)
 
-  imageFiles.sort((a, b) => a.src.localeCompare(b.src))
+  /* imageFiles.sort((a, b) => a.src.localeCompare(b.src)) */
+
+  imageFiles.sort(() => Math.random() - 0.5)
 
   return imageFiles
 }
@@ -28,12 +30,12 @@ const { title, description } = Astro.props
         <a class="image" href={img.src}>
           <Image
             src={img.src}
-            width="1200"
-            height="750"
+            width="1280"
+            height="800"
             alt="Astro Multiverse"
           />
         </a>
-        <h2>{title}</h2>
+        
         <p>{description}</p>
       </article>
     ))

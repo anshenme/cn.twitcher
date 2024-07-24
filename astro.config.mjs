@@ -1,6 +1,9 @@
-import { defineConfig } from 'astro/config'
+import { defineConfig } from 'astro/config';
+import vercel from '@astrojs/vercel/serverless';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://astro-multiverse.vercel.app',
+  site: 'https://www.twitcher.cn',
+  output: 'server',
+  adapter: vercel(),
 })
